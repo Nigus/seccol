@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Property of IT Man AS, Bryne Norway It is strictly forbidden to copy or modify the authors file, however it is possible to
+use the open source libraries under the GNU licence protocols terms.
+© 2015 IT Man AS
+Created by Nigussie on 03.03.2015.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    tools:context=".FlagsActivity$PlaceholderFragment">
+    <TextView android:text="Create New User" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/wallet_holo_blue_light"
+        android:layout_marginTop="10dp"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5sp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="5sp" >
+        <EditText android:id="@+id/name" android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete" android:maxLines="1"
+            android:singleLine="true"
+            android:layout_weight="0.5"
+            android:hint="@string/hint_name"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/darker_gray"
+            >
+            <requestFocus />
+        </EditText>
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:dropDownWidth="200dp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <EditText
+                android:id="@+id/phone1"
+                android:layout_height="41dp"
+                android:layout_width="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:paddingLeft="10dp"
+                android:textColor="@android:color/darker_gray"/>
+        </LinearLayout>
+
+        <EditText android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone*"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/darker_gray"
+            />
+        <EditText android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail*"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/darker_gray"
+            android:inputType="textEmailAddress"
+            />
+        <TextView android:id="@+id/text"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            ></TextView>
+        <EditText android:id="@+id/password" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/prompt_password"
+            android:imeOptions="actionUnspecified" android:inputType="textPassword"
+            android:maxLines="1" android:singleLine="true"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/darker_gray"
+            />
+        <EditText android:id="@+id/password2" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="retype-password"
+            android:imeOptions="actionUnspecified" android:inputType="textPassword"
+            android:maxLines="1" android:singleLine="true"
+            android:layout_weight="0.5"
+            android:textColor="@android:color/darker_gray"
+            />
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="@string/btn_register"
+            android:textColor="@color/white"
+            android:background="@drawable/button_styles"/>
+        <!-- Link to Login Screen -->
+        <Button
+            android:id="@+id/btnLinkToLoginScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="@string/btn_link_to_login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <Button
+        android:layout_below="@id/l1"
+        android:id="@+id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="@string/label_send"
+        android:textSize="20sp" />
+</LinearLayout>

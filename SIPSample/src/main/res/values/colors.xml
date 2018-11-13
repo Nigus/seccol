@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Property of IT Man AS, Bryne Norway It is strictly forbidden to copy or modify the authors file, however it is possible to
+  use the open source libraries under the GNU licence protocols terms.
+  © 2015 IT Man AS
+  Created by Nigussie on 03.03.2015.
+-->
+
+<resources>
+
+    <color name="btn_bg_press">#7700ccff</color>
+    <color name="cyan_500">#00BCD4</color>
+    <color name="dialnumcolor">#ffd9d6dc</color>>
+    <!-- Secondary text color in the Phone app -->
+    <color name="dialtacts_secondary_text_color">#888888</color>
+    <!-- Color of the theme of the People app -->
+    <color name="people_app_theme_color">#ff000000</color>
+    <color name="incall_call_banner_text_color">#33B5FF</color>
+    <color name="incall_call_banner_background">#ffff7a14</color>
+    <color name="incall_secondary_info_background">#ffAABB</color>
+    <color name="action_bar_background_highlight">#cecece</color>
+    <color name="action_bar_background">#e6e6e6</color>
+    <color name="itman_color">#2b010101</color>
+<color name="account_inactive">#ba0305</color>
+    <color name="primary_text_color">#cb101010</color>
+    <color name="secondary_text_color">#000000</color>
+<color name="account_unregistered">#ffff7a14</color>
+    <color name="account_valid">#ff21ff0f</color>
+    <color name="answercall">#ff1ace0e</color>
+    <color name="rejectcall">#fff9161a</color>
+<color name="account_error">#fff9161a</color>
+<color name="wallet_holo_blue_light">#3FB5FF</color>
+    <color name="app_background">#33B5FF</color>
+    <color name="light_red">#ba0305</color>
+    <color name="dark_red">#9d0c0f</color>
+    <color name="text_tab_selected">#5d5d5d</color>
+    <color name="text_tab_unselected">#838183</color>
+    <!--New colors for login-->
+    <color name="bg_login">#ff000000</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="input_login">#ff000000</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#ff86daf2</color>
+    <color name="btn_logut_bg">#ff6861</color>
+
+</resources>

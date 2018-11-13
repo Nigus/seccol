@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context=".PhonebookMain" >
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Name:"
+        android:textAppearance="?android:attr/textAppearance" />
+    <TextView
+        android:id="@+id/textPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textName"
+        android:layout_marginTop="5dp"
+        android:text="Phone:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btnInvite"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#1420b0"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Invite"
+        android:textColor="#FFFFFF" />
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnInvite"
+        android:layout_marginTop="3dp"
+        android:background="#2fe010"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Call"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

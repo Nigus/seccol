@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" >
+        <shape>
+            <solid
+                android:color="@color/wallet_holo_blue_light" />
+            <stroke
+                android:width="1dp"
+                android:color="#db1e5152" />
+            <corners
+                android:radius="6dp" />
+            <padding
+                android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="#1a2a97"
+                android:endColor="#203cb8"
+                android:angle="270" />
+
+            <stroke
+                android:width="1dp"
+                android:color="#7e37c9dd" />
+            <corners
+                android:radius="5dp" />
+            <padding
+                android:left="2dp"
+                android:top="2dp"
+                android:right="2dp"
+                android:bottom="2dp" />
+        </shape>
+    </item>
+</selector>

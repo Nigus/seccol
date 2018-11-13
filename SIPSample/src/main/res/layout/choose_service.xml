@@ -1,0 +1,64 @@
+<!--Det blirr forslag for inflator by Nigussie-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity" >
+
+    <RadioGroup
+        android:id="@+id/tab_menu_main"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="false"
+        android:orientation="horizontal"
+        android:background="@drawable/bgimg1"
+        >
+        <RadioButton
+            android:id="@+id/tab_dial"
+            style="@style/raido_tab"
+            android:background="@drawable/tabdialericon"
+            android:layout_height="fill_parent"
+            android:layout_width="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="35dp"
+            android:layout_weight="0.5"
+            />
+
+        <RadioButton
+            android:id="@+id/tab_phonebook"
+            style="@style/raido_tab"
+            android:layout_height="fill_parent"
+            android:layout_width="10dp"
+            android:background="@drawable/tabcontact1"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.5"
+             />
+        <RadioButton
+            android:id="@+id/tab_callogs"
+            style="@style/raido_tab"
+            android:layout_height="fill_parent"
+            android:layout_width="10dp"
+            android:background="@drawable/tabrecent1"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="0.5"
+             />
+        <!--RadioButton
+            android:id="@+id/tab_sms"
+            style="@style/raido_tab"
+            android:layout_height="fill_parent"
+            android:layout_width="10dp"
+            android:background="@drawable/smsbtn"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+             /-->
+    </RadioGroup>
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+</RelativeLayout>

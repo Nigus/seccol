@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!--
+        Generate an id which can be used when the location menu item is added in MainActivity
+    -->
+    <item name="menu_location" type="id"/>
+    <item name="call_banner_1" type="id">Secure line...</item>
+    <item name="menu_accbtn_accounts" type="id"/>
+    <item name="menu_accbtn_extras" type="id"/>
+    <item name="details" type="id" />
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Property of IT Man AS, Bryne Norway It is strictly forbidden to copy or modify the authors file, however it is possible to
+  use the open source libraries under the GNU licence protocols terms.
+  © 2015 IT Man AS
+  Created by Nigussie on 03.03.2015.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialpadAdditionalEnd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.150"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal"
+    >
+    <!-- Onscreen "All contacts" button.
+         TODO: rename this id. -->
+    <ImageButton android:id="@+id/btn1"
+        android:layout_width="0px"
+        android:clickable="false"
+        android:layout_weight="0.30"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:state_enabled="false"
+        android:background="@drawable/btn_background"
+        android:contentDescription="@string/description_search_button"
+        />
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="24dip"
+        android:layout_gravity="center_vertical"
+        android:background="#00000000" />
+    <!-- Onscreen "Dial" button, diused on all platforms by
+         default. Its usage can be disabled using resources (see
+         config.xml.) -->
+    <ImageButton android:id="@+id/endButton"
+        android:layout_width="wrap_content"
+        android:layout_weight="0.10"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:state_enabled="false"
+        android:background="@drawable/btn_call"
+        android:contentDescription="@string/description_dial_button"
+        android:src="@drawable/ic_lockscreen_decline_normal" />
+    <View
+        android:layout_width="1dip"
+        android:layout_height="24dip"
+        android:layout_gravity="center_vertical"
+        android:background="#00000000" />
+    <!-- Onscreen "Backspace/Delete" button -->
+    <ImageButton android:id="@+id/delbtn"
+        android:layout_width="0px"
+        android:layout_weight="0.30"
+        android:clickable="false"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:state_enabled="false"
+        android:background="@drawable/btn_background"
+        />
+</LinearLayout>
+

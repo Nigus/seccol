@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Property of IT Man AS, Bryne Norway It is strictly forbidden to copy or modify the authors file, (C) 2015 IT Man AS
+Created by Nigussie on 03.03.2015.
+-->
+
+<!--RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecentFragment">
+    <TextView
+        android:text="Recent calls"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="23dp"
+        android:id="@+id/textView1"
+        android:textColor="@color/incall_call_banner_text_color"
+        />
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/textView1"
+        android:id="@+id/myView2"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView1"
+        android:layout_below="@id/myView2"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".RecentFragment" >
+<TextView
+    android:text="Recent calls"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:textSize="23dp"
+    android:id="@+id/textView1"
+    android:textColor="@color/incall_call_banner_text_color"
+    />
+    <View android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/textView1"
+        android:id="@+id/myView"
+        />
+    <ListView
+        android:id="@+id/listview_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/myView"
+        android:background="@drawable/grad_whiterounded"
+        >
+
+    </ListView>
+
+
+</RelativeLayout>

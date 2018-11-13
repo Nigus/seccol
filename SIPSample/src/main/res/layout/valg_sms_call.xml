@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Property of IT Man AS, Bryne Norway It is strictly forbidden to copy or modify the authors file,
+  (C) 2015 IT Man AS
+  Created by Nigussie on 03.03.2015.
+-->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bgimg"
+    android:orientation="vertical"
+    >
+    <!---->
+    <TextView
+        android:text="Home"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView"
+        android:textColor="@color/wallet_holo_blue_light"
+        style="@style/Base.TextAppearance.AppCompat" />
+    <View android:layout_height="100dip"
+        android:layout_width="wrap_content">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <ImageButton android:id="@+id/call"
+            android:src="@drawable/callbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="callMe"
+            android:background="@drawable/caller_btn"
+            />
+        <View
+            android:layout_width="88dp"
+            android:layout_height="100dp"/>
+
+        <ImageButton android:id="@+id/sms"
+            android:src="@drawable/smsbtn2"
+            android:layout_gravity="left"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="smsMe"
+            android:background="@drawable/caller_btn"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="88dp"
+        android:layout_height="100dp"/>
+    <LinearLayout
+        android:id="@+id/dialpadAdditionalButtons"
+        android:layout_width="match_parent"
+        android:layout_weight="0.01"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+
+        android:layout_marginBottom="25dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        >
+    <!--android:background="@drawable/mydialogborder_style"-->
+
+        <ImageButton android:id="@+id/phonebookbtn"
+            android:layout_width="0px"
+            android:layout_weight="0.30"
+            android:layout_height="wrap_content"
+            android:state_enabled="false"
+            android:background="@drawable/caller_btn"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/contacts"/>
+        <View
+            android:layout_width="1dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:background="#00000000" />
+        <!-- Onscreen "Dial" button, diused on all platforms by
+             default. Its usage can be disabled using resources (see
+             config.xml.) -->
+        <ImageButton android:id="@+id/invitebtn"
+            android:layout_width="0px"
+            android:layout_weight="0.30"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:state_enabled="false"
+            android:background="@drawable/caller_btn"
+            android:src="@drawable/greenplus" />
+        <View
+            android:layout_width="1dip"
+            android:layout_height="24dip"
+            android:layout_gravity="center_vertical"
+            android:background="#00000000" />
+        <!-- Onscreen "Backspace/Delete" button -->
+        <ImageButton android:id="@+id/recentbtn"
+            android:layout_width="0px"
+            android:layout_weight="0.30"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:state_enabled="false"
+            android:background="@drawable/caller_btn"
+            android:src="@drawable/tabrecent1" />
+    </LinearLayout>
+</LinearLayout>

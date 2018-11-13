@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--PreferenceCategory
+        android:summary="Username and password information"
+        android:title="Login information" >
+        <EditTextPreference
+            android:key="username"
+            android:summary="Please enter your login username"
+            android:title="Username" />
+        <EditTextPreference
+            android:key="password"
+            android:summary="Enter your password"
+            android:title="Password" />
+    </PreferenceCategory-->
+    <PreferenceCategory
+        android:key="network_param"
+        android:title="@string/for_outgoings" >
+        <RadioButtonPreference android:title="@string/always_available" android:key="always_online" android:summary="@string/always_available" android:defaultValue="true"/>
+        <RadioButtonPreference android:title="@string/wifi_available" android:key="always_online" android:summary="@string/wifi_available" android:defaultValue="true"/>
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_wifi"
+            android:summary="@string/network1"
+            android:title="@string/use_wifi" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="use_3g"
+            android:summary="@string/network2"
+            android:title="@string/use_3g" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use4_g"
+            android:summary="@string/network3"
+            android:title="@string/network3" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="network_param"
+        android:summary="@string/availability_profile"
+        android:title="my_availablity" >
+        <CheckBoxPreference
+            android:key="checkBox"
+            android:summary="onAlways/onWifi"
+            android:title="Choose one" />
+        <ListPreference
+
+            android:key="listpref"
+            android:summary="List preference example"
+            android:title="List preference" />
+    </PreferenceCategory>
+</PreferenceScreen>

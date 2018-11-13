@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hebrwKeyboardView"
+    android:layout_width="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@+id/xsubLayout"
+    android:orientation="vertical"
+    android:background="@drawable/btnimgsms"
+    android:visibility="visible"
+    android:layout_height="fill_parent">
+
+    <EditText android:layout_height="25dp"
+        android:id="@+id/et1"
+        android:layout_width="fill_parent"
+        android:background="@drawable/search_style"
+        android:paddingLeft="6dp"
+        android:textColor="@color/white"
+        android:hint=" Phone book"
+        android:drawableRight="@drawable/ic_menu_search_holo_light"
+        />
+        <ImageButton
+        android:id="@+id/btaddcontact"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_menu_search_holo_light" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_weight="0.48"
+        android:background="@android:color/white"
+        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        >
+        <EditText android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:background="#fff"
+            android:paddingLeft="0dp"
+            android:id="@+id/xEt"
+            android:hint="  Write Your message here"
+            android:layout_alignTop="@+id/mysendbtn"
+            android:layout_alignRight="@+id/mysendbtn"
+            android:layout_alignEnd="@+id/mysendbtn" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mysendbtn"
+            android:layout_marginBottom="215dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="200sp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="true"
+        android:stretchColumns="*"
+        >
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="200sp"
+            android:padding="0sp"
+            android:background="@drawable/mybackground2">
+            <TableRow android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:padding="0sp">
+                <LinearLayout android:baselineAligned="true"
+                    android:layout_width="wrap_content" android:layout_height="45sp"
+                    android:fitsSystemWindows="true">
+                    <Button android:id="@+id/xQ"
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:text="Q"
+                        android:textColor="#fff"
+                        android:tag="Q"
+                        android:background="@drawable/btnsmsbg"
+                        android:padding="0sp"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        style="@style/DialtactsDialpadButtonStyle"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xW"
+                        android:layout_width="0dip" style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_weight="1" android:layout_height="fill_parent"
+                        android:padding="0sp" android:textColor="#fff" android:tag="W"
+                        android:text="W" android:layout_gravity="left"
+                        android:background="@drawable/btnsmsbg"
+                        />
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xE"
+                        android:layout_gravity="left" android:layout_width="0dip"
+                        android:layout_weight="1" style="@style/DialtactsDialpadButtonStyle"
+                        android:padding="0sp" android:layout_height="fill_parent"
+                        android:text="E" android:tag="E"
+                        android:background="@drawable/btnsmsbg"
+                        android:textColor="#fff" android:fitsSystemWindows="true" />
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xR"
+                        android:layout_width="0dip"
+                        android:layout_weight="1" android:layout_gravity="center_horizontal"
+                        android:layout_height="fill_parent" android:text="R" android:tag="R"
+                        android:textColor="#fff"
+                        android:fitsSystemWindows="true" android:ellipsize="marquee"
+                        style="@style/DialtactsDialpadButtonStyle"
+                        android:background="@drawable/btnsmsbg"/>
+                    <Button android:soundEffectsEnabled="true"
+                        style="@style/DialtactsDialpadButtonStyle" android:id="@+id/xT"
+                        android:layout_width="0dip" android:background="@drawable/btnsmsbg"
+                        android:layout_weight="1" android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal" android:text="T"
+                        android:tag="T" android:fitsSystemWindows="true"
+                        android:textColor="#fff"
+                        android:ellipsize="marquee" />
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xY"
+                        android:background="@drawable/btnsmsbg"
+                        android:layout_width="0dip" style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_weight="1" android:layout_height="fill_parent"
+                        android:tag="y" android:layout_gravity="center" android:text="Y"
+                        android:fitsSystemWindows="true" android:textColor="#fff"
+                        android:ellipsize="marquee" />
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xU"
+                        android:layout_width="0dip"
+                        android:layout_weight="1" android:layout_gravity="center_horizontal"
+                        android:layout_height="fill_parent" android:text="U" android:tag="U"
+                        android:textColor="#fff"  style="@style/DialtactsDialpadButtonStyle"
+                        android:fitsSystemWindows="true" android:ellipsize="marquee" android:textSize="15dp"
+                        android:background="@drawable/btnsmsbg"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xI"
+                        android:layout_width="0dip" android:background="@drawable/btnsmsbg"
+                        android:layout_weight="1" android:layout_height="fill_parent"
+                        android:text="I" android:fitsSystemWindows="true" android:tag="I"
+                        android:textColor="#fff"
+                        android:layout_gravity="center_horizontal" android:ellipsize="marquee"
+                        style="@style/DialtactsDialpadButtonStyle"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xO"
+                        android:background="@drawable/btnsmsbg"
+                        android:layout_width="5dip" style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_weight="1" android:layout_height="fill_parent"
+                        android:text="O" android:fitsSystemWindows="true" android:tag="O"
+                        android:textColor="#fff"
+                        android:layout_gravity="center_horizontal" android:ellipsize="marquee" />
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xP"
+                        android:layout_width="0dip" style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_weight="1" android:layout_height="fill_parent"
+                        android:textColor="#fff"  android:text="P"
+                        android:fitsSystemWindows="true" android:tag="P"
+                        android:background="@drawable/btnsmsbg"
+                        android:layout_gravity="center_horizontal" android:ellipsize="marquee" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="45sp">
+                    <Button android:layout_alignWithParentIfMissing="true"
+                        android:soundEffectsEnabled="true" android:id="@+id/xA"
+                        android:background="@drawable/btnsmsbg"
+                        android:layout_width="0dip" style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_weight="1" android:layout_centerHorizontal="true"
+                        android:tag="A" android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:textColor="#fff"
+                        android:layout_height="fill_parent" android:text="A"
+                        android:layout_alignParentLeft="true" android:fitsSystemWindows="true" />
+                    <Button android:layout_centerHorizontal="true"
+                        android:soundEffectsEnabled="true" android:layout_toRightOf="@id/xA"
+                        android:id="@+id/xS" android:layout_width="0dip"
+                        android:layout_weight="1" android:tag="S" style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:layout_height="fill_parent" android:text="S"
+                        android:background="@drawable/btnsmsbg"
+                        android:textColor="#fff"
+                        android:layout_alignWithParentIfMissing="true"
+                        android:fitsSystemWindows="true" />
+                    <Button android:layout_alignWithParentIfMissing="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/btnsmsbg"
+                        android:soundEffectsEnabled="true" android:id="@+id/xD"
+                        android:layout_toRightOf="@id/xS" android:layout_width="0dip"
+                        android:layout_weight="1" style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:textColor="#fff"  android:tag="D"
+                        android:layout_height="fill_parent" android:text="D"
+                        android:fitsSystemWindows="true" />
+                    <Button android:layout_alignWithParentIfMissing="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/btnsmsbg"
+                        android:soundEffectsEnabled="true" android:id="@+id/xF"
+                        android:layout_toRightOf="@id/xD" android:layout_width="0dip"
+                        android:layout_weight="1" style="@style/DialtactsDialpadButtonStyle"
+                        android:tag="F" android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:layout_height="fill_parent" android:text="F"
+                        android:textColor="#fff"
+                        android:fitsSystemWindows="true" />
+                    <Button android:layout_alignWithParentIfMissing="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/btnsmsbg"
+                        android:soundEffectsEnabled="true" android:id="@+id/xG"
+                        android:layout_toRightOf="@id/xF" android:layout_width="0dip"
+                        android:layout_weight="1" style="@style/DialtactsDialpadButtonStyle"
+                        android:textColor="#fff"
+                        android:layout_height="fill_parent" android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:tag="G" android:text="G" android:fitsSystemWindows="true" />
+                    <Button android:layout_alignWithParentIfMissing="true"
+                        android:layout_centerHorizontal="true" style="@style/DialtactsDialpadButtonStyle"
+                        android:soundEffectsEnabled="true" android:id="@+id/xH"
+                        android:layout_toRightOf="@id/xG" android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:background="@drawable/btnsmsbg"
+                        android:tag="H" android:layout_height="fill_parent"
+                        android:textColor="#fff"
+                        android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:text="H" android:fitsSystemWindows="true" />
+                    <Button android:layout_alignWithParentIfMissing="true"
+                        android:layout_centerHorizontal="true"
+                        android:soundEffectsEnabled="true" android:id="@+id/xJ"
+                        android:layout_toRightOf="@id/xH" android:layout_width="0dip"
+                        android:layout_weight="1" style="@style/DialtactsDialpadButtonStyle"
+                        android:textColor="#fff"
+                        android:background="@drawable/btnsmsbg"
+                        android:layout_height="fill_parent" android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:tag="J" android:text="J" android:fitsSystemWindows="true" />
+                    <Button android:layout_alignWithParentIfMissing="true"
+                        android:layout_centerHorizontal="true"
+                        android:soundEffectsEnabled="true" android:id="@+id/xK"
+                        android:textColor="#fff"
+                        android:layout_toRightOf="@id/xJ" android:layout_width="0dip"
+                        android:background="@drawable/btnsmsbg"
+                        android:layout_weight="1" style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_height="fill_parent" android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:tag="K" android:text="K" android:fitsSystemWindows="true" />
+                    <Button android:layout_alignWithParentIfMissing="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/btnsmsbg"
+                        android:soundEffectsEnabled="true" android:id="@+id/xL"
+                        android:textColor="#fff"
+                        android:layout_toRightOf="@id/xK" android:layout_width="0dip"
+                        android:layout_weight="1" style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_height="fill_parent" android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:tag="L" android:text="L" android:fitsSystemWindows="true" />
+                    <Button android:layout_alignWithParentIfMissing="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/btnsmsbg"
+                        android:soundEffectsEnabled="true" android:id="@+id/xS1"
+                        android:layout_toRightOf="@id/xL" android:layout_width="0dip"
+                        android:layout_weight="1" style="@style/DialtactsDialpadButtonStyle"
+                        android:textColor="#fff"
+                        android:layout_height="fill_parent" android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:tag=" " android:text=" " android:fitsSystemWindows="true" />
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:layout_gravity="fill_vertical"
+                android:fitsSystemWindows="true" android:orientation="horizontal">
+                <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="45sp" android:gravity="bottom"
+                    android:orientation="horizontal">
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xS2"
+                        android:background="@drawable/btnsmsbg"
+                        android:layout_width="32sp" android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:textColor="#fff"
+                        android:layout_height="fill_parent" android:text=" " android:tag="à"
+                        android:fitsSystemWindows="true"  style="@style/DialtactsDialpadButtonStyle"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xZ"
+                        android:layout_width="30sp" android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:layout_height="fill_parent" android:text="Z" android:tag="Z"
+                        android:textColor="#fff"
+                        android:background="@drawable/btnsmsbg"
+                        android:fitsSystemWindows="true" style="@style/DialtactsDialpadButtonStyle"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xX"
+                        android:layout_width="30sp" android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:tag="X" android:layout_height="fill_parent" android:text="X"
+                        android:textColor="#fff"
+                        android:background="@drawable/btnsmsbg"
+                        android:fitsSystemWindows="true" style="@style/DialtactsDialpadButtonStyle"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xC" style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_width="32sp" android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:tag="C" android:layout_height="fill_parent" android:text="C"
+                        android:textColor="#fff"
+                        android:fitsSystemWindows="true"
+                        android:background="@drawable/btnsmsbg"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xV"
+                        android:layout_width="30sp" android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:textColor="#fff"  android:tag="V"
+                        android:background="@drawable/btnsmsbg"
+                        android:text="V" android:fitsSystemWindows="true" style="@style/DialtactsDialpadButtonStyle"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xB"
+                        android:layout_width="33sp" android:layout_height="fill_parent"
+                        android:textColor="#fff"  style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:background="@drawable/btnsmsbg"
+                        android:tag="B" android:text="B" android:fitsSystemWindows="true" />
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xN"
+                        android:layout_width="33sp" android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:textColor="#fff"  android:tag="N"
+                        android:background="@drawable/btnsmsbg"
+                        android:text="N" android:fitsSystemWindows="true" style="@style/DialtactsDialpadButtonStyle" />
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xM"
+                        android:layout_width="34sp" android:layout_height="fill_parent"
+                        android:background="@drawable/btnsmsbg"
+                        android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:textColor="#fff"  android:tag="M"
+                        android:text="M" android:fitsSystemWindows="true" style="@style/DialtactsDialpadButtonStyle"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xS3"
+                        android:layout_width="33sp" android:layout_height="fill_parent"
+                        android:textColor="#fff"  android:tag="é"
+                        android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:background="@drawable/btnsmsbg"
+                        android:text=" " android:fitsSystemWindows="true" style="@style/DialtactsDialpadButtonStyle"/>
+
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xBack"
+                        android:layout_width="33sp" android:layout_height="fill_parent"
+                        android:textColor="#fff"  android:tag="back"
+                        android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:fitsSystemWindows="true" android:background="@drawable/back_high" />
+
+                </LinearLayout>
+            </TableRow>
+            <TableRow android:layout_width="fill_parent"
+                android:layout_height="fill_parent" android:fitsSystemWindows="true"
+                android:orientation="horizontal">
+                <LinearLayout android:layout_width="fill_parent"
+
+                    android:layout_height="45sp" android:gravity="bottom"
+                    android:orientation="horizontal">
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xChange"
+                        android:layout_width="30dp"  android:layout_height="fill_parent"
+                        android:textColor="#fff"
+                        android:layout_gravity="right" android:fitsSystemWindows="true"
+                        android:paddingLeft="35sp" android:tag="upper" android:background="@drawable/change" />
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xS4"
+                        android:layout_width="33sp" android:layout_height="fill_parent"
+                        android:textColor="#fff"
+                        android:background="@drawable/btnsmsbg"
+                        android:layout_gravity="right" android:fitsSystemWindows="true"
+                        android:tag="è" android:text="no" style="@style/DialtactsDialpadButtonStyle"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xSpace"
+                        android:textColor="#fff"  style="@style/DialtactsDialpadButtonStyle"
+                        android:layout_width="75sp" android:layout_height="fill_parent"
+                        android:background="@drawable/btnsmsbg"
+                        android:tag=" " android:text="|_____|" android:fitsSystemWindows="true" />
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xS5"
+                        android:layout_width="30sp" android:layout_height="fill_parent"
+                        android:textColor="#fff"
+                        android:background="@drawable/btnsmsbg"
+                        android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:tag=" " android:text="  " android:fitsSystemWindows="true" style="@style/DialtactsDialpadButtonStyle" />
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xS6"
+                        android:layout_width="30sp" android:layout_height="fill_parent"
+                        android:layout_gravity="center_horizontal|center_vertical|center"
+                        android:textColor="#fff"  android:tag="î"
+                        android:background="@drawable/btnsmsbg"
+                        android:text="î" android:fitsSystemWindows="true" style="@style/DialtactsDialpadButtonStyle"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xNum"
+                        android:background="@drawable/btnsmsbg"
+                        android:layout_width="wrap_content" android:layout_height="fill_parent"
+                        android:textColor="#fff"  android:tag="num"
+                        android:text="123" android:fitsSystemWindows="true" style="@style/DialtactsDialpadButtonStyle"/>
+                    <Button android:soundEffectsEnabled="true" android:id="@+id/xDone"
+                        android:layout_width="20sp" android:layout_height="fill_parent"
+                        android:layout_gravity="right" android:background="@drawable/hide_high"
+                        android:textColor="#fff"  android:tag="done"
+                        android:fitsSystemWindows="true" style="@style/DialtactsDialpadButtonStyle"/>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </TableLayout>
+</RelativeLayout>

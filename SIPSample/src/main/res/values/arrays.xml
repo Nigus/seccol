@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="availability">
+        <item name="always">Always Available</item>
+        <item name="onwifi">Available only on WIFI</item>
+
+    </string-array>
+    <string-array name="sip_data_sources">
+        <item>@string/uri_nbr</item>
+        <item>@string/uri_im</item>
+        <item>@string/uri_sip</item>
+    </string-array>
+    <string-array name="default_smiley_names">
+        <item>Happy</item> <!-- 0: :-) -->
+        <item>Sad</item> <!-- 1: :-( -->
+        <item>Winking</item> <!-- 2: ;-) -->
+        <item>Tongue sticking out</item> <!-- 3: :-P -->
+        <item>Surprised</item> <!-- 4: =-O -->
+        <item>Kissing</item> <!-- 5: :-* -->
+        <item>Yelling</item> <!-- 6: :O -->
+        <item>Cool</item> <!-- 7: B-) -->
+        <item>Money mouth</item> <!-- 8: :-$ -->
+        <item>Foot in mouth</item> <!-- 9: :-! -->
+        <item>Embarrassed</item> <!-- 10: :-[ -->
+        <item>Angel</item> <!-- 11: O:-) -->
+        <item>Undecided</item> <!-- 12: :-\\ -->
+        <item>Crying</item> <!-- 13: :\'( -->
+        <item>Lips are sealed</item> <!-- 14: :-X -->
+        <item>Laughing</item> <!-- 15: :-D -->
+        <item>Confused</item> <!-- 16: o_O -->
+    </string-array>
+
+    <string-array name="presence_status_names">
+        <item>@string/online</item>
+        <item>@string/offline</item>
+    </string-array>
+    <string-array name="default_smiley_texts">
+
+        <item>Happy</item> <!-- 0: :-) -->
+        <item>Sad</item> <!-- 1: :-( -->
+        <item>Winking</item> <!-- 2: ;-) -->
+        <item>Tongue sticking out</item> <!-- 3: :-P -->
+        <item>Surprised</item> <!-- 4: =-O -->
+        <item>Kissing</item> <!-- 5: :-* -->
+        <item>Yelling</item> <!-- 6: :O -->
+        <item>Cool</item> <!-- 7: B-) -->
+        <item>Money mouth</item> <!-- 8: :-$ -->
+        <item>Foot in mouth</item> <!-- 9: :-! -->
+        <item>Embarrassed</item> <!-- 10: :-[ -->
+        <item>Angel</item> <!-- 11: O:-) -->
+        <item>Undecided</item> <!-- 12: :-\\ -->
+        <item>Crying</item> <!-- 13: :\'( -->
+        <item>Lips are sealed</item> <!-- 14: :-X -->
+        <item>Laughing</item> <!-- 15: :-D -->
+        <item>Confused</item> <!-- 16: o_O -->
+
+    </string-array>
+    <string-array name="listArray">
+        <item>Only when on Wi-Fi</item>
+        <item>On any network</item>
+    </string-array>
+    <string-array name="listValues">
+        <item>Wi-Fi</item>
+        <item>Any</item>
+    </string-array>
+</resources>

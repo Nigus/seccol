@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Property of IT Man AS, Bryne Norway It is strictly forbidden to copy or modify the authors file, however it is possible to
+use the open source libraries under the GNU licence protocols terms.
+© 2015 IT Man AS
+Created by Nigussie on 03.03.2015.
+-->
+
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:title="Debug Settings">
+    <CheckBoxPreference android:defaultValue="false"
+    					android:key="pref_loopback"
+    					android:title="Loopback Test Mode"
+    					android:summary="No network, audio feedback only" />
+	<CheckBoxPreference android:defaultValue="false"
+    					android:key="pref_debugview"
+    					android:title="Show Debug info"
+    					android:summary="Display on-screen debugging information during calls" />
+    					    					
+   <CheckBoxPreference android:defaultValue="false"
+    				   android:key="pref_simulate_packet_loss"
+    				   android:title="Simulate packet loss"
+    				   android:summary="Drop packets randomly" />    				  
+</PreferenceCategory>     
+</PreferenceScreen>

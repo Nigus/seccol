@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/btnimgsms"
+    >
+    <RelativeLayout
+        android:id="@+id/phone_book"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+        <AutoCompleteTextView
+            android:layout_height="40dp"
+            android:layout_width="fill_parent"
+            android:background="@drawable/search_style2"
+            android:paddingLeft="5dp"
+            android:id="@+id/etmsgdest"
+            android:hint="  Search Phonebook"
+            android:textColorHint="#ffffff"
+            android:drawableRight="@drawable/ic_menu_search_holo_light"
+            android:textColor="@color/black"
+            android:layout_marginTop="3dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="0.48"
+            android:background="@android:color/white"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/conversations"
+        android:layout_below="@+id/phone_book"
+        android:layout_above="@+id/messagelayout"
+        >
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/form"
+            android:layout_alignParentTop="true" >
+        </ListView>
+    </RelativeLayout>
+    <LinearLayout
+    android:id="@+id/messagelayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/grad_whiterounded"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    >
+            <!--TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message"
+                android:textColor="@color/black" /-->
+            <EditText
+                android:id="@+id/etmessage"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:ems="10" >
+            </EditText>
+        <ImageButton
+            android:id="@+id/btsendmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send2"
+            android:background="@drawable/btn_call"
+            android:text="@string/str_sendmsg"
+            android:gravity="bottom"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+</RelativeLayout>

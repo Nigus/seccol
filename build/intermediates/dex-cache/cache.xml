@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\libs\volley.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d4aaa36e04ee71a83444f8367c97a46fda662d2c">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\volley-b3dbb9f2e818feb4d00278e40c43972bba7f3abd.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f8efd0096475e0daf054267b61544e10dc776503">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\classes-f2cbdcdc04055bde7335cd72e0aa0a12241a086e.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\libs\portsipvoipsdk.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a01a94a3c0ba1685526bca84df488af9fc01be36">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\portsipvoipsdk-6eacc6915c187d5aeda6b8b20f22edcade8fa8c9.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\libs\scprov-jdk15on-1.47.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1e2f52dbf7402b12b792282078b9f895512ae5af">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\scprov-jdk15on-1.47.0.2-4b0d322387241843cb4aa732342dfb89625c052c.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\libs\gcm.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="92bef354f25f31cb76bd1a4f1c1df87b498a9ebf">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\gcm-15ad4d877f6cf2383c0995807bb46a23b17d1504.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\libs\sc-light-jdk15on-1.47.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d5c98671cc97fa0d928be1c7eb5edd3fb95d3234">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\sc-light-jdk15on-1.47.0.2-e62e85b48e5b17488bf6142f0fe9f26343b5f205.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\libs\gson-2.2.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="53bfcd3c8e310d1493b2691484525ed90b04e236">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\gson-2.2.2-8e39c3c70ae462b36da763ac95cbc0bc7f51b7fb.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4486e953d1f35f8ccab098b1dd67146366d5f731">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\classes-642c938b1d99162a6730f1b83f45acfc51dadee0.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\libs\libphonenumber-4.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c6ce838a73af4b45b225a22135b7580e2b0313af">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\libphonenumber-4.1-d09a1aa1fac99a4aef0fc4467a22aa52d5715ae7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Niggui\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.1\support-annotations-22.2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="61a0ff5c29295ec56d7e0bd3d25d95dbf71b4b2b">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\support-annotations-22.2.1-761d6c3b32ff6ebf68fe443e6fd98a399ee83238.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\libs\java-mail-1.4.4.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="29db85cb07136bc758cf6ea3bc5e5d04812e314f">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\java-mail-1.4.4-ee2a650faa9007a76b437ae48e3f2340c844afed.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\jars\libs\internal_impl-22.2.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c471eaaba13ff64f6e0383d1c30a9cdc9a97efeb">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\internal_impl-22.2.1-ed3b6047c420e28bf812e6e735800643d51ec51f.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\libs\httpclient-4.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a76d7fd8033d48b4c67b4ccf159abb080c1059b6">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\httpclient-4.0-d044adab7c2bb950a482777ab098fc78e2eea825.jar" />
+    </item>
+    <item
+        jar="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.1.71\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0f6d5c1ef2e982c3b7858408e3df389cf5d202da">
+        <dex dex="C:\October Project\SIPSample_AndroidStudio\SIPSample\build\intermediates\pre-dexed\debug\classes-d18bb33cd35c3d6b5b91dafd1624028394eee5d8.jar" />
+    </item>
+
+</items>

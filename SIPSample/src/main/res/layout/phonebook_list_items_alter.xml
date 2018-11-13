@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TwoLineListItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="30dp"
+    android:mode="twoLine"
+    android:gravity="center_horizontal"
+    >
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Name:"
+        android:textAppearance="?android:attr/textAppearance" />
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text1"
+        android:layout_marginTop="5dp"
+        android:text="Phone:"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btnInvite"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:background="@drawable/invite_style"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Invite"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/text2"
+        android:layout_toLeftOf="@+id/btnCall"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/btnCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/call_style"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Call"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/btnInvite"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="3dp"
+        android:layout_alignBottom="@+id/btnInvite"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        />
+
+</TwoLineListItem>

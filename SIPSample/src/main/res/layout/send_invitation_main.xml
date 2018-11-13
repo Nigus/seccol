@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Property of IT Man AS, Bryne Norway It is strictly forbidden to copy or modify the authors file. (C) 2015 IT Man AS
+Created by Nigussie on 03.03.2015.
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialpadAdditionalButtons"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.150"
+    android:gravity="center"
+    android:layout_marginBottom="50dp"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:text="Send Invitation"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="23dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView"
+        android:textColor="@color/wallet_holo_blue_light"
+        />
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        >
+        <!--AutoCompleteTextView
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="@drawable/search_style"
+            android:paddingLeft="10dp"
+            android:textSize="14dp"
+            android:id="@+id/mmWhoNo"
+            android:hint="  Search Phonebook/Type phonenumber"
+            android:textColorHint="#ffffff"
+            android:drawableRight="@drawable/ic_menu_search_holo_light"
+            android:textColor="@color/black"
+          >
+            <requestFocus />
+        </AutoCompleteTextView-->
+        <!--ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mysendbtn"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu_search_holo_light"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+             /-->
+    </LinearLayout>
+    <!--Button android:id="@+id/sendinvite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:state_enabled="false"
+        android:text="Invite"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/invite_style"
+        android:layout_marginTop="60dp"
+        /-->
+    <Spinner
+        android:id="@+id/invite_spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:prompt="@string/promoter"
+        android:entries="@array/options"
+        android:background="@drawable/search_style2"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:spinnerMode="dropdown"/>
+    <Button android:id="@+id/send_invite"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:state_enabled="false"
+        android:text="Invite"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/invite_style"
+        android:layout_marginTop="60dp"
+        />
+
+</LinearLayout>

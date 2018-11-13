@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="network_param"
+        android:title="@string/for_outgoings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_wifi_out"
+            android:summary="@string/use_wifi_out_desc"
+            android:title="@string/use_wifi" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="use_3g_out"
+            android:summary="@string/use_3g_disclamer"
+            android:title="@string/use_3g" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="use_4g_in"
+            android:summary="@string/use_4g_disclamer"
+            android:title="@string/use_3g" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="use_gprs_out"
+            android:summary="@string/use_3g_disclamer"
+            android:title="@string/use_gprs" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="use_edge_out"
+            android:summary="@string/use_3g_disclamer"
+            android:title="@string/use_edge" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_other_out"
+            android:summary="@string/use_other_out_desc"
+            android:title="@string/use_other" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="use_anyway_out"
+            android:summary="@string/use_anyway_desc"
+            android:title="@string/use_anyway" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="use_roaming_out"
+            android:summary="@string/use_roaming_desc"
+            android:title="@string/use_roaming" />
+
+</PreferenceScreen>

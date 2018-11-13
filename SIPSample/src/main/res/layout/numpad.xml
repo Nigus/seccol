@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="0dp"
+    android:background="@null"
+    >
+    <TableLayout
+        android:id="@+id/dialpad"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bgimg3"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="150dp"
+            android:weightSum="1"
+            android:layout_marginTop="10dp"
+            >
+            <!--FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                -->
+            <TextView
+                android:text="SecureCall"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/textView"
+                />
+
+            <EditText android:id="@+id/digits"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right|bottom"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:clickable="false"
+                android:textColor="@color/wallet_holo_blue_light"
+                />
+            <TextView android:id="@+id/textViewconnected"
+                android:textColor="@color/wallet_holo_blue_light"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_marginTop="0dp"
+                android:enabled="false"
+                />
+
+            <!--ImageButton android:id="@+id/deleteButton"
+                android:layout_width="0px"
+                android:layout_weight="0.30"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:state_enabled="false"
+                android:background="@drawable/btn_background"
+                android:contentDescription="@string/description_delete_button"
+                android:src="@drawable/ic_dial_action_delete" /-->
+            <!--/FrameLayout-->
+
+            <!--TextView
+                android:text="Secure Connected..."
+                android:textColor="@color/secondary_text_color"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:gravity="center"
+                style="@style/Base.TextAppearance.AppCompat" /-->
+
+        </LinearLayout>
+        <TableRow
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            >
+
+            <ImageButton android:id="@+id/one1" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_1"
+                android:contentDescription="@string/description_image_button_one"
+                android:padding="2dp"
+                android:fadingEdge="horizontal"
+                android:background="@drawable/imagebtn"
+                />
+            <View android:layout_height="90px"
+                android:layout_width="10px">
+
+            </View>
+            <ImageButton android:id="@+id/two1" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_2"
+                android:contentDescription="@string/description_image_button_two"
+                android:padding="2dp"
+                android:background="@drawable/imagebtn"/>
+            <View android:layout_height="90px"
+                android:layout_width="10px"/>
+            <ImageButton android:id="@+id/three1" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_3"
+                android:contentDescription="@string/description_image_button_three"
+                android:padding="2dp"
+                android:background="@drawable/imagebtn"/>
+        </TableRow>
+        <View android:layout_height="10px"
+            android:layout_width="10px"
+            />
+        <TableRow
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <ImageButton android:id="@+id/four1" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_4"
+                android:contentDescription="@string/description_image_button_four"
+                android:background="@drawable/imagebtn"/>
+            <View android:layout_height="90px"
+                android:layout_width="10px">
+
+            </View>
+            <ImageButton android:id="@+id/five1" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_5"
+                android:contentDescription="@string/description_image_button_five"
+                android:background="@drawable/imagebtn"/>
+            <View android:layout_height="90px"
+                android:layout_width="10px">
+
+            </View>
+            <ImageButton android:id="@+id/six1" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_6"
+                android:contentDescription="@string/description_image_button_six"
+                android:background="@drawable/imagebtn"/>
+        </TableRow>
+        <View android:layout_height="10px"
+            android:layout_width="10px"/>
+        <TableRow
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <ImageButton android:id="@+id/seven1" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_7"
+                android:contentDescription="@string/description_image_button_seven"
+                android:background="@drawable/imagebtn"/>
+            <View android:layout_height="90px"
+                android:layout_width="10px">
+
+            </View>
+            <ImageButton android:id="@+id/eight1" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_8"
+                android:contentDescription="@string/description_image_button_eight"
+                android:cropToPadding="false"
+                android:background="@drawable/imagebtn"/>
+            <View android:layout_height="90px"
+                android:layout_width="10px">
+
+            </View>
+            <ImageButton android:id="@+id/nine1" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_9"
+                android:contentDescription="@string/description_image_button_nine"
+                android:background="@drawable/imagebtn"/>
+        </TableRow>
+        <View android:layout_height="10px"
+            android:layout_width="10px"/>
+        <TableRow
+            android:layout_height="0px"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <ImageButton android:id="@+id/star1" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_star"
+                android:contentDescription="@string/description_image_button_star"
+                android:background="@drawable/imagebtn"/>
+            <View android:layout_height="90px"
+                android:layout_width="10px">
+            </View>
+            <ImageButton android:id="@+id/zero1" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_0"
+                android:contentDescription="@string/description_image_button_zero"
+                android:background="@drawable/imagebtn"/>
+            <View android:layout_height="90px"
+                android:layout_width="10px">
+            </View>
+            <ImageButton android:id="@+id/pound" style="@style/DialtactsDialpadButtonStyle"
+                android:src="@drawable/dial_num_pound"
+                android:contentDescription="@string/description_image_button_pound"
+                android:background="@drawable/imagebtn"/>
+        </TableRow>
+        <View android:layout_height="15px"
+            android:layout_width="10px"/>
+        <include layout="@layout/dialpad_aditional_endcall"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </TableLayout>
+
+    <Spinner
+        android:id="@+id/sp_lines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_status"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/txtips"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_tips"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:enabled="false">
+
+        <CheckBox
+            android:id="@+id/sendVideo"
+            style="@style/portcheckbox"
+            android:checked="true"
+            android:text="@string/str_videocall"
+            android:visibility="invisible"
+            android:enabled="false"
+            />
+
+        <CheckBox
+            android:id="@+id/acceptVideo"
+            style="@style/portcheckbox"
+            android:checked="true"
+            android:text="@string/str_acceptvideo"
+            android:visibility="invisible"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:enabled="false">
+
+        <CheckBox
+            android:id="@+id/conference"
+            style="@style/portcheckbox"
+            android:text="@string/str_confrence"
+            android:visibility="invisible"
+            android:enabled="false"/>
+
+        <CheckBox
+            android:id="@+id/sendSdp"
+            style="@style/portcheckbox"
+            android:checked="true"
+            android:text="@string/str_sendsdp"
+            android:visibility="invisible"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:gravity="center"
+        android:visibility="invisible"
+        >
+
+        <EditText
+            android:id="@+id/etsipaddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:ems="10"
+            android:textColor="@color/cyan_500"
+            />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3.14"
+            android:background="@drawable/grad_bluerounded">
+
+            <TableLayout
+                android:id="@+id/function_pad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="3"
+                android:background="@drawable/bgimg">
+
+                <TableRow
+                    android:layout_height="5dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:visibility="invisible">
+
+                    <Button
+                        android:id="@+id/answer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_answer"
+                        android:textColor="#5cff60"
+                        android:background="@drawable/grad_bluerounded"
+                        />
+
+                    <Button
+                        android:id="@+id/reject"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_reject"
+                        android:background="@drawable/grad_bluerounded"
+                        android:textColor="#5cff60"
+                        />
+
+                    <Button
+                        android:id="@+id/transfer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="#5cff60"
+                        android:enabled="false"
+                        android:background="@drawable/grad_bluerounded"
+                        android:text="@string/str_transfer" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/hold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_hold"
+                        android:textColor="#5cff60"
+
+                        android:background="@drawable/grad_bluerounded"
+                        />
+
+                    <Button
+                        android:id="@+id/unhold"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_unhold"
+                        android:textColor="#5cff60"
+                        android:background="@drawable/grad_bluerounded"
+                        />
+
+
+                    <Button
+                        android:background="@drawable/grad_bluerounded"
+                        android:id="@+id/attenttransfer"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_att_transfer"
+                        android:enabled="false"
+                        android:textSize="12sp"
+                        android:textColor="#5cff60"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1"
+
+                    >
+                    <Button
+                        android:id="@+id/mute"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/grad_bluerounded"
+                        android:layout_weight="1"
+                        android:text="@string/str_mute"
+                        android:textColor="#5cff60"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/hangup"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/grad_bluerounded"
+                        android:text="@string/str_hangup"
+                        android:textColor="#5cff60"
+                        android:src="@drawable/ic_lockscreen_decline_normal"
+                        />
+
+                    <Button
+                        android:id="@+id/mic"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/grad_bluerounded"
+                        android:text="@string/str_speekon"
+                        android:textColor="#5cff60"
+                        />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:id="@+id/dialer_pad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bgimg"
+                android:visibility="invisible">
+                <TableRow
+                    android:layout_height="5dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1"
+                    >
+                    <Button
+                        android:id="@+id/one"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/cyan_500"
+                        android:text="@string/str_one"
+                        android:background="@drawable/imagebtn"/>
+
+                    <Button
+                        android:id="@+id/two"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/cyan_500"
+                        android:text="@string/str_two"
+                        android:background="@drawable/imagebtn"/>
+
+                    <Button
+                        android:id="@+id/three"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/cyan_500"
+                        android:text="@string/str_three"
+                        android:background="@drawable/imagebtn"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_height="25dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1" >
+                     <TextView android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Calling"
+                        android:textColor="@color/cyan_500"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/four"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_four"
+                        android:textColor="@color/cyan_500"
+                        android:background="@drawable/imagebtn"
+                        />
+
+                    <Button
+                        android:id="@+id/five"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_five"
+                        android:textColor="@color/cyan_500"
+                        android:background="@drawable/imagebtn"/>
+
+                    <Button
+                        android:id="@+id/six"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="4dip"
+                        android:textColor="@color/cyan_500"
+                        android:text="@string/str_six"
+                        android:background="@drawable/imagebtn"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="2dip"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/seven"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_seven"
+                        android:textColor="@color/cyan_500"
+                        android:background="@drawable/imagebtn"/>
+
+                    <Button
+                        android:id="@+id/eight"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/cyan_500"
+                        android:text="@string/str_eight"
+                        android:background="@drawable/imagebtn"/>
+
+                    <Button
+                        android:id="@+id/nine"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_nine"
+                        android:textColor="@color/cyan_500"
+                        android:background="@drawable/imagebtn"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="54dip"
+                    android:layout_marginBottom="1dip"
+                    android:layout_weight="1" >
+
+                    <Button
+                        android:id="@+id/star"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/str_star"
+                        android:textColor="@color/cyan_500"
+                        android:background="@drawable/imagebtn"/>
+
+                    <Button
+                        android:id="@+id/zero"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/cyan_500"
+                        android:text="@string/str_zero"
+                        android:background="@drawable/imagebtn"/>
+
+                    <Button
+                        android:id="@+id/sharp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/cyan_500"
+                        android:text="@string/str_sharp"
+                        android:background="@drawable/imagebtn"/>
+                </TableRow>
+            </TableLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/dialer"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.10"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:state_enabled="false"
+                android:contentDescription="@string/description_dial_button"
+                android:visibility="invisible"
+                android:text="call"
+                />
+            <ImageButton
+                android:id="@+id/pad"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@null"
+                android:background="@drawable/tabdialericon"
+                android:enabled="false"
+                android:visibility="invisible"
+                android:layout_weight="0.31" android:layout_marginLeft="40dp"/>
+
+            <ImageButton
+                android:id="@+id/delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@null"
+                android:paddingLeft="4dip"
+                android:src="@android:drawable/ic_input_delete"
+                android:visibility="invisible"
+                android:enabled="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.portsip"
+    android:versionCode="7"
+    android:versionName="1.0.1">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="22"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" /> <!-- To retrieve the account name (email) as part of sign-in: -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" /> <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+	<uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <permission android:name="com.portsip.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.portsip.permission.C2D_MESSAGE" />
+    <!--uses-permission android:name="android.permission.INSTALL_PACKAGES" /-->
+    <!--uses-permission android:name="android.permission.DELETE_PACKAGES" /-->
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" /-->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/squarelogo"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme"
+        android:name="com.portsip.MyApplication"
+        >
+        <!--receiver android:name="com.microsoft.windowsazure.notifications.NotificationsBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action  android:name = "android.intent.action.PACKAGE_REMOVED" />
+                <category android:name="com.portsip" />
+            </intent-filter>
+        </receiver-->
+        <receiver android:name ="com.portsip.UninstallReceiver" android:exported="true"
+            >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DELETE"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+            <!--intent-filter>
+            <action android:name="android.intent.action.QUERY_PACKAGE_RESTART"/>
+            <action android:name="android.intent.action.VIEW" />
+            <action android:name="android.intent.action.DELETE"/>
+            <action  android:name = "android.intent.action.PACKAGE_REMOVED"/>
+            <category android:name="android.intent.category.DEFAULT" />
+            <data android:scheme="package"></data>
+            </intent-filter-->
+        </receiver>
+        <!--receiver android:name=".Incomingcall" android:enabled="true">
+            <intent-filter android:priority="-1">
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver-->
+        <!--receiver android:name=".DataSmsReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DATA_SMS_RECEIVED"/>
+                <data android:scheme="sms" />
+                <data android:host="localhost"/>
+                <data android:port="1000"/>
+            </intent-filter>
+        </receiver-->
+        <activity android:name="com.portsip.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.portsip.UninstallIntentActivity"
+            android:label="@string/app_name" >
+            <!--intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.DELETE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="package"  />
+            </intent-filter-->
+        </activity>
+       <activity android:name="com.portsip.main.GetPhoneNummer"/>
+       <activity
+            android:name="com.portsip.main.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:windowSoftInputMode="adjustPan"
+           android:screenOrientation="portrait"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" android:host="callman.cloudapp.net" />
+            </intent-filter>
+        </activity>
+        <activity android:name="helper.searchitems.ContactSearch"/>
+        <activity android:name="com.portsip.bulksms_info.BulkMainActivity"/>
+        <activity android:name="com.portsip.Calling"/>
+        <activity android:name="com.portsip.main.SettingMenu"/>
+        <activity android:name="com.portsip.main.LoginMenu"/>
+        <activity android:name="com.portsip.main.DialMenu"/>
+        <activity android:name="com.portsip.main.Canclemenu"/>
+        <activity android:name="com.portsip.main.RestartService"/>
+        <activity android:name="com.portsip.main.HomeTabActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.portsip.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.portsip.MainActivity"/>
+        </activity>
+        <activity android:name="com.portsip.main.chat.ChatBubbleActivity"/>
+        <activity android:name="com.portsip.main.bubbles.HelloBubblesActivity"/>
+        <!--activity android:name=".sipsample.MainActivity"></activity-->
+        <activity android:name="com.portsip.main.Dialer_activity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:icon="@drawable/it_icon"
+            tools:ignore="NewApi" />
+
+        <activity android:name="com.portsip.main.ConnectedCall"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.portsip.bulk.InviteFriend" />
+        <activity android:name="com.portsip.main.RecentActivity"/>
+        <activity android:name="com.portsip.main.phonebook.PhonebookMain"/>
+        <activity android:name="com.portsip.bulk.chooseservice"
+            >
+            <!--intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter-->
+        </activity>
+
+        <activity android:name="com.portsip.main.SendSms"
+            android:windowSoftInputMode="adjustResize"
+            android:parentActivityName="com.portsip.MainActivity"
+            android:screenOrientation="portrait">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.portsip.MainActivity"/>
+        </activity>
+        <!--activity android:name=".sipsample.Legal"></activity-->
+        <activity android:name="com.portsip.main.sendNewPass">
+        </activity>
+        <!--activity android:name=".sipsample.LoginFragment"></activity-->
+        <activity android:name="com.portsip.main.ResetPassActivity"></activity>
+        <activity android:name="com.portsip.main.MyKeyboard"
+            android:parentActivityName="com.portsip.MainActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.portsip.main.SendSms"/>
+        </activity>
+        <activity android:name="com.portsip.util.network_preference"></activity>
+        <activity android:name="helper.searchitems.AutocompleteCheck"></activity>
+        <activity
+            android:name="com.portsip.util.prefs.PrefsFast"
+            android:configChanges="orientation"
+            android:label="@string/prefs_fast"
+            android:permission="android.permission.CONFIGURE_SIP"
+            android:theme="@style/AppCompatTheme" >
+            <intent-filter>
+                <action android:name="com.csipsimple.ui.action.PREFS_FAST" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.portsip.pushnotification.PushMainActivity"></activity>
+        <activity android:name="com.portsip.pushnotification.RegisterActivity">
+            <!--intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter-->
+        </activity>
+        <activity android:name="com.portsip.main.invite_new.InviteMain"></activity>
+        <!--meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /-->
+        <service android:name="com.portsip.service.PortSipService"></service>
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.portsip.pushnotification" />
+            </intent-filter>
+        </receiver>
+        <receiver
+        android:name="com.portsip.service.NetworkChangeReceiver"
+        android:label="NetworkChangeReceiver" >
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+        </intent-filter>
+        </receiver>
+        <service android:name="com.portsip.pushnotification.GCMIntentService" />
+        <activity android:name="com.portsip.myprovider.GetProviderValues"/>
+        <provider
+            android:name="com.portsip.myprovider.MyProvider"
+            android:authorities="com.portsip.myprovider.MyProvider">
+        </provider>
+        <!--receiver android:name=".sipsample.util.network_preference" android:enabled="true"/-->
+        <activity android:name="helper.networkmonitoring.NetworkActivity"/>
+        <receiver android:name=".background_alarm.AutoStart">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".background_alarm.Alarm" android:exported="true">
+            <intent-filter>
+                <action android:name="portsip.START_ALARM" >
+                </action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

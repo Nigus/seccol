@@ -52,9 +52,6 @@ public class LoginFragment extends Fragment implements OnItemSelectedListener,On
 	String LogPath = null;
 	ArrayList<String> take_res= new ArrayList<>();
 	private ProgressDialog pDialog;
-	/************* Do not edit the following key code.************  IT is a licensed key and no one has a right to use it**********/
-	String licenseKey ="3Zh1CRTNENzY1RUYzM0ZDQkM1OUEyOEQyQzYwOTJBMENFRkA0NEIxRDEwMDM4MjY2NzFCRjYwMDdCNTI1ODQ1ODdBMUBEMkE4Nzc3Mzg3MEQzODg3NUZGMTg2MDI5MTg4M0Q1OUBGRUU2MjE2OUFCOEYyMDlDRDYxODQzMEI2ODJGRTY1QQ";
-	//String licenseKey ="1dR4zREEzNkUzNEVFNDkwNTU3NUJCN0RDMzNBRUNBQkM1OUA0NTlGN0I5NjI1QTQ4MUNGNDYxODkzQzBDQThEQkE2QUBFRUE0RkFGNzhEQUM4QTczNkUwNkJDN0QzQjI2OUE0QUA2OUI3QUQ5NTM3RTNEM0I0RkE4QkVCMkU4NDFFNzBDNA";
 	private SQLiteHandler db;
 	private SessionManager session;
 	private boolean rec_flag=false;

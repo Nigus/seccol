@@ -8,8 +8,8 @@ public class AppConfig {
     //Server user login url
     //public static String URL_LOGIN = "http://192.168.0.101/android_login_api/";
     //public static String URL_LOGIN = "http://100.73.44.83/android_login_api/";
-    public static String URL_LOGIN = "http://itmansecurity.cloudapp.net/";
+    public static String URL_LOGIN = "http://crypto_server.cloudapp.net/";
     // Server user register url
-    public static String URL_REGISTER = "http://itmansecurity.cloudapp.net/";
-    public static String URL_UPDATE = "http://itmansecurity.cloudapp.net/";
+    public static String URL_REGISTER = "http://crypto_server.cloudapp.net/";
+    public static String URL_UPDATE = "http://crypto_server.cloudapp.net/";
 }
